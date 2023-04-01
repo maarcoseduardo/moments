@@ -1,1 +1,82 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --white: #ffffff;
+}
+
+/* Global/Initial Props */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria;
+  text-decoration: none;
+  color: #444;
+}
+
+a {
+  color: #444;
+  transition: 0.4s;
+}
+
+a:hover {
+  color: #dec129;
+}
+
+html {
+  @media (max-width: 1080px) {
+    font-size: 93.75%;
+  }
+  @media (max-width: 720px) {
+    font-size: 87.5%;
+  }
+}
+
+/* FORM STYLES */
+form {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+
+    label {
+      font-weight: bold;
+      font-size: 0.9em;
+      margin-bottom: 0.4em;
+    }
+
+    input,
+    textarea {
+      padding: 0.6em;
+      color: #777;
+      font-size: 0.8em;
+    }
+
+    .validation-error p {
+      color: #dc3545;
+      margin-top: 0.4em;
+      border-left: 3px solid #dc3545;
+      padding-left: 0.2em;
+    }
+  }
+
+  button[type="submit"] {
+    background-color: #efefef;
+    border: none;
+    padding: 0.6em 1em;
+    font-weight: bold;
+    
+    cursor: pointer;
+    font-size: 1.1em;
+    border: 2px solid transparent;
+    transition: 0.4s;
+
+    &:hover {
+      color: #dec129;
+      border-color: #dec129;
+      background-color: transparent;
+    }
+  }
+}
