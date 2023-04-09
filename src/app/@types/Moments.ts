@@ -5,7 +5,7 @@ export interface IMoment {
   image: string;
   createdAt?: string;
   updatedAt?: string;
-  coments?: [
+  comments?: [
     {
       text: string;
       username: string;
